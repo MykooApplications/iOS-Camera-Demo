@@ -13,9 +13,6 @@
 		02C27AEB28B9879B003934F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C27AE928B9879B003934F9 /* Main.storyboard */; };
 		02C27AED28B9879E003934F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C27AEC28B9879E003934F9 /* Assets.xcassets */; };
 		02C27AF028B9879E003934F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C27AEE28B9879E003934F9 /* LaunchScreen.storyboard */; };
-		02C27AFA28B9AFA5003934F9 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C27AF928B9AFA5003934F9 /* VideoViewController.swift */; };
-		02C27AFC28B9AFBB003934F9 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C27AFB28B9AFBB003934F9 /* PictureViewController.swift */; };
-		02C27AFE28B9B0E5003934F9 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C27AFD28B9B0E5003934F9 /* QRViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +24,6 @@
 		02C27AEC28B9879E003934F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02C27AEF28B9879E003934F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02C27AF128B9879E003934F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02C27AF928B9AFA5003934F9 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
-		02C27AFB28B9AFBB003934F9 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
-		02C27AFD28B9B0E5003934F9 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +59,6 @@
 				02C27AE328B9879B003934F9 /* AppDelegate.swift */,
 				02C27AE528B9879B003934F9 /* SceneDelegate.swift */,
 				02C27AE728B9879B003934F9 /* ViewController.swift */,
-				02C27AF928B9AFA5003934F9 /* VideoViewController.swift */,
-				02C27AFB28B9AFBB003934F9 /* PictureViewController.swift */,
-				02C27AFD28B9B0E5003934F9 /* QRViewController.swift */,
 				02C27AE928B9879B003934F9 /* Main.storyboard */,
 				02C27AEC28B9879E003934F9 /* Assets.xcassets */,
 				02C27AEE28B9879E003934F9 /* LaunchScreen.storyboard */,
@@ -148,11 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				02C27AE828B9879B003934F9 /* ViewController.swift in Sources */,
-				02C27AFC28B9AFBB003934F9 /* PictureViewController.swift in Sources */,
 				02C27AE428B9879B003934F9 /* AppDelegate.swift in Sources */,
-				02C27AFA28B9AFA5003934F9 /* VideoViewController.swift in Sources */,
 				02C27AE628B9879B003934F9 /* SceneDelegate.swift in Sources */,
-				02C27AFE28B9B0E5003934F9 /* QRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
