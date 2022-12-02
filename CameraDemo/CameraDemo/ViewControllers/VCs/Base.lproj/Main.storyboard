@@ -65,11 +65,23 @@
                                     <action selector="galleryButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wxz-5x-b0R"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSK-rc-xxf">
+                                <rect key="frame" x="24.5" y="793" width="40" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="8c6-aw-wlg"/>
+                                    <constraint firstAttribute="width" constant="40" id="hWL-vt-3Sn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="eSK-rc-xxf" firstAttribute="centerX" secondItem="aaO-Kw-teE" secondAttribute="centerX" id="JRT-LL-p4w"/>
                             <constraint firstItem="ERD-8e-zna" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="RQz-Ho-6iE"/>
+                            <constraint firstItem="aaO-Kw-teE" firstAttribute="top" secondItem="eSK-rc-xxf" secondAttribute="bottom" constant="8.5" id="Xob-BS-Q4R"/>
                             <constraint firstItem="aaO-Kw-teE" firstAttribute="centerY" secondItem="ERD-8e-zna" secondAttribute="centerY" id="r9B-Kp-R3d"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jdK-L3-4WX" secondAttribute="trailing" constant="20" id="x2n-e8-mwB"/>
                             <constraint firstItem="jdK-L3-4WX" firstAttribute="centerY" secondItem="ERD-8e-zna" secondAttribute="centerY" id="xdZ-o1-o47"/>
@@ -79,9 +91,10 @@
                     </view>
                     <connections>
                         <outlet property="cameraSwitch" destination="aaO-Kw-teE" id="FsK-Ss-sXA"/>
+                        <outlet property="captureButton" destination="ERD-8e-zna" id="m9m-LX-F33"/>
                         <outlet property="flashButton" destination="eVR-QK-LaI" id="9JA-VV-j60"/>
                         <outlet property="galleryButton" destination="jdK-L3-4WX" id="e2M-Uw-Vae"/>
-                        <outlet property="pictureSegueButton" destination="ERD-8e-zna" id="m9m-LX-F33"/>
+                        <outlet property="photoVideoLabel" destination="eSK-rc-xxf" id="DEo-RV-M6F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -16,7 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var cameraSwitch: UISwitch!
     @IBOutlet weak var flashButton: UIButton!
     @IBOutlet weak var galleryButton: UIButton!
-    @IBOutlet weak var pictureSegueButton: UIButton! // mainToPicture
+    @IBOutlet weak var captureButton: UIButton! // mainToPicture
+    @IBOutlet weak var photoVideoLabel: UILabel!
     
     let captureSession = AVCaptureSession()
     var previewLayer: CALayer!
@@ -33,10 +34,11 @@ class ViewController: UIViewController {
         
         view.backgroundColor = UIColor.black
         
-       
-        pictureSegueButton.layer.cornerRadius = 0.5 * pictureSegueButton.bounds.size.width
-        pictureSegueButton.clipsToBounds = true
-        pictureSegueButton.setImage(UIImage(named:"thumbsUp.png"), for: .normal)
+        cameraSwitch.isOn = false
+        photoVideoLabel.text = "Photo"
+        captureButton.layer.cornerRadius = 0.5 * captureButton.bounds.size.width
+        captureButton.clipsToBounds = true
+        captureButton.setImage(UIImage(named:"thumbsUp.png"), for: .normal)
        // pictureSegueButton.addTarget(self, action: #selector(thumbsUpButtonPressed), for: .touchUpInside)
         
     }
@@ -54,8 +56,11 @@ class ViewController: UIViewController {
     @IBAction func cameraSwitchToggle(_ sender: UISwitch) {
         if sender.isOn {
             print("[ViewController] video on")
+            photoVideoLabel.text = "Video"
         } else {
             print("[ViewController] camera on")
+            photoVideoLabel.text = "Photo"
+
         }
         
     }

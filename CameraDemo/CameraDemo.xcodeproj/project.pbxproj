@@ -12,7 +12,11 @@
 		02C27AE828B9879B003934F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C27AE728B9879B003934F9 /* ViewController.swift */; };
 		02C27AEB28B9879B003934F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C27AE928B9879B003934F9 /* Main.storyboard */; };
 		02C27AED28B9879E003934F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C27AEC28B9879E003934F9 /* Assets.xcassets */; };
-		02C27AF028B9879E003934F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C27AEE28B9879E003934F9 /* LaunchScreen.storyboard */; };
+		3117EDAA29397AB90069A7E4 /* RequestCameraAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3117EDA829397AB90069A7E4 /* RequestCameraAuthView.swift */; };
+		3117EDAB29397AB90069A7E4 /* RequestCameraAuthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3117EDA929397AB90069A7E4 /* RequestCameraAuthView.xib */; };
+		31B4B9BD29398045000566F2 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B4B9BB29398045000566F2 /* LaunchViewController.swift */; };
+		31B4B9BE29398045000566F2 /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B4B9BC29398045000566F2 /* LaunchViewController.xib */; };
+		31B4B9C3293981EE000566F2 /* RequestCameraAuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B4B9C2293981EE000566F2 /* RequestCameraAuthController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +26,12 @@
 		02C27AE728B9879B003934F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		02C27AEA28B9879B003934F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02C27AEC28B9879E003934F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		02C27AEF28B9879E003934F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02C27AF128B9879E003934F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3117EDA829397AB90069A7E4 /* RequestCameraAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCameraAuthView.swift; sourceTree = "<group>"; };
+		3117EDA929397AB90069A7E4 /* RequestCameraAuthView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestCameraAuthView.xib; sourceTree = "<group>"; };
+		31B4B9BB29398045000566F2 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		31B4B9BC29398045000566F2 /* LaunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchViewController.xib; sourceTree = "<group>"; };
+		31B4B9C2293981EE000566F2 /* RequestCameraAuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCameraAuthController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,83 @@
 		02C27AE228B9879B003934F9 /* CameraDemo */ = {
 			isa = PBXGroup;
 			children = (
+				31B4B9BF293981BB000566F2 /* Controllers */,
+				3117EDA329397A0D0069A7E4 /* ViewControllers */,
+				3117EDA229397A020069A7E4 /* Views */,
 				02C27AE328B9879B003934F9 /* AppDelegate.swift */,
 				02C27AE528B9879B003934F9 /* SceneDelegate.swift */,
-				02C27AE728B9879B003934F9 /* ViewController.swift */,
-				02C27AE928B9879B003934F9 /* Main.storyboard */,
 				02C27AEC28B9879E003934F9 /* Assets.xcassets */,
-				02C27AEE28B9879E003934F9 /* LaunchScreen.storyboard */,
 				02C27AF128B9879E003934F9 /* Info.plist */,
 			);
 			path = CameraDemo;
+			sourceTree = "<group>";
+		};
+		3117EDA229397A020069A7E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3117EDA729397A860069A7E4 /* RequestAuth */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3117EDA329397A0D0069A7E4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3117EDA629397A6C0069A7E4 /* VCs */,
+				3117EDA429397A2C0069A7E4 /* Launch */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3117EDA429397A2C0069A7E4 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				31B4B9BB29398045000566F2 /* LaunchViewController.swift */,
+				31B4B9BC29398045000566F2 /* LaunchViewController.xib */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		3117EDA629397A6C0069A7E4 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				02C27AE728B9879B003934F9 /* ViewController.swift */,
+				02C27AE928B9879B003934F9 /* Main.storyboard */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		3117EDA729397A860069A7E4 /* RequestAuth */ = {
+			isa = PBXGroup;
+			children = (
+				3117EDA829397AB90069A7E4 /* RequestCameraAuthView.swift */,
+				3117EDA929397AB90069A7E4 /* RequestCameraAuthView.xib */,
+			);
+			path = RequestAuth;
+			sourceTree = "<group>";
+		};
+		31B4B9BF293981BB000566F2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				31B4B9C0293981C6000566F2 /* RequestAuth */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		31B4B9C0293981C6000566F2 /* RequestAuth */ = {
+			isa = PBXGroup;
+			children = (
+				31B4B9C1293981CF000566F2 /* Camera */,
+			);
+			path = RequestAuth;
+			sourceTree = "<group>";
+		};
+		31B4B9C1293981CF000566F2 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				31B4B9C2293981EE000566F2 /* RequestCameraAuthController.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +201,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02C27AF028B9879E003934F9 /* LaunchScreen.storyboard in Resources */,
+				3117EDAB29397AB90069A7E4 /* RequestCameraAuthView.xib in Resources */,
+				31B4B9BE29398045000566F2 /* LaunchViewController.xib in Resources */,
 				02C27AED28B9879E003934F9 /* Assets.xcassets in Resources */,
 				02C27AEB28B9879B003934F9 /* Main.storyboard in Resources */,
 			);
@@ -138,7 +215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31B4B9C3293981EE000566F2 /* RequestCameraAuthController.swift in Sources */,
 				02C27AE828B9879B003934F9 /* ViewController.swift in Sources */,
+				31B4B9BD29398045000566F2 /* LaunchViewController.swift in Sources */,
+				3117EDAA29397AB90069A7E4 /* RequestCameraAuthView.swift in Sources */,
 				02C27AE428B9879B003934F9 /* AppDelegate.swift in Sources */,
 				02C27AE628B9879B003934F9 /* SceneDelegate.swift in Sources */,
 			);
@@ -153,14 +233,6 @@
 				02C27AEA28B9879B003934F9 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		02C27AEE28B9879E003934F9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				02C27AEF28B9879E003934F9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -292,6 +364,7 @@
 				DEVELOPMENT_TEAM = 6346F46FVY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CameraDemo/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,6 +393,7 @@
 				DEVELOPMENT_TEAM = 6346F46FVY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CameraDemo/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
