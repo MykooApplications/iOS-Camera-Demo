@@ -17,6 +17,16 @@
 		31B4B9BD29398045000566F2 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B4B9BB29398045000566F2 /* LaunchViewController.swift */; };
 		31B4B9BE29398045000566F2 /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B4B9BC29398045000566F2 /* LaunchViewController.xib */; };
 		31B4B9C3293981EE000566F2 /* RequestCameraAuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B4B9C2293981EE000566F2 /* RequestCameraAuthController.swift */; };
+		31CF05312940FC49007865E0 /* UIViewAddShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF05302940FC49007865E0 /* UIViewAddShow.swift */; };
+		31CF05332940FC72007865E0 /* UIViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF05322940FC72007865E0 /* UIViewAnimation.swift */; };
+		31CF05372940FC92007865E0 /* UIColors+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF05362940FC92007865E0 /* UIColors+Colors.swift */; };
+		31CF05392940FCC9007865E0 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF05382940FCC9007865E0 /* NotificationName.swift */; };
+		31CF053C2940FD34007865E0 /* DeviceOrientaionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF053B2940FD34007865E0 /* DeviceOrientaionController.swift */; };
+		31CF05402940FD9C007865E0 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF053F2940FD9C007865E0 /* TimerController.swift */; };
+		31CF05422940FDAE007865E0 /* CaptureSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF05412940FDAE007865E0 /* CaptureSessionController.swift */; };
+		31CF05462940FE10007865E0 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF05452940FE10007865E0 /* VideoPlayerViewController.swift */; };
+		31CF05492940FE50007865E0 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF05472940FE50007865E0 /* CaptureViewController.swift */; };
+		31CF054A2940FE50007865E0 /* CaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31CF05482940FE50007865E0 /* CaptureViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +42,16 @@
 		31B4B9BB29398045000566F2 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		31B4B9BC29398045000566F2 /* LaunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchViewController.xib; sourceTree = "<group>"; };
 		31B4B9C2293981EE000566F2 /* RequestCameraAuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCameraAuthController.swift; sourceTree = "<group>"; };
+		31CF05302940FC49007865E0 /* UIViewAddShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAddShow.swift; sourceTree = "<group>"; };
+		31CF05322940FC72007865E0 /* UIViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAnimation.swift; sourceTree = "<group>"; };
+		31CF05362940FC92007865E0 /* UIColors+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColors+Colors.swift"; sourceTree = "<group>"; };
+		31CF05382940FCC9007865E0 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
+		31CF053B2940FD34007865E0 /* DeviceOrientaionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOrientaionController.swift; sourceTree = "<group>"; };
+		31CF053F2940FD9C007865E0 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
+		31CF05412940FDAE007865E0 /* CaptureSessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSessionController.swift; sourceTree = "<group>"; };
+		31CF05452940FE10007865E0 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		31CF05472940FE50007865E0 /* CaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
+		31CF05482940FE50007865E0 /* CaptureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaptureViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +84,14 @@
 		02C27AE228B9879B003934F9 /* CameraDemo */ = {
 			isa = PBXGroup;
 			children = (
+				31CF052F2940FC2C007865E0 /* Extensions */,
 				31B4B9BF293981BB000566F2 /* Controllers */,
-				3117EDA329397A0D0069A7E4 /* ViewControllers */,
 				3117EDA229397A020069A7E4 /* Views */,
+				3117EDA329397A0D0069A7E4 /* ViewControllers */,
 				02C27AE328B9879B003934F9 /* AppDelegate.swift */,
 				02C27AE528B9879B003934F9 /* SceneDelegate.swift */,
+				02C27AE928B9879B003934F9 /* Main.storyboard */,
+				31B4B9BC29398045000566F2 /* LaunchViewController.xib */,
 				02C27AEC28B9879E003934F9 /* Assets.xcassets */,
 				02C27AF128B9879E003934F9 /* Info.plist */,
 			);
@@ -88,6 +111,8 @@
 			children = (
 				3117EDA629397A6C0069A7E4 /* VCs */,
 				3117EDA429397A2C0069A7E4 /* Launch */,
+				31CF05432940FDCC007865E0 /* Capture */,
+				31CF05442940FDDE007865E0 /* VideoPlayer */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -96,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				31B4B9BB29398045000566F2 /* LaunchViewController.swift */,
-				31B4B9BC29398045000566F2 /* LaunchViewController.xib */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -105,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				02C27AE728B9879B003934F9 /* ViewController.swift */,
-				02C27AE928B9879B003934F9 /* Main.storyboard */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -122,6 +145,9 @@
 		31B4B9BF293981BB000566F2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				31CF053E2940FD83007865E0 /* CaptureSession */,
+				31CF053A2940FCFE007865E0 /* DeviceOrientation */,
+				31CF053D2940FD77007865E0 /* Timer */,
 				31B4B9C0293981C6000566F2 /* RequestAuth */,
 			);
 			path = Controllers;
@@ -141,6 +167,58 @@
 				31B4B9C2293981EE000566F2 /* RequestCameraAuthController.swift */,
 			);
 			path = Camera;
+			sourceTree = "<group>";
+		};
+		31CF052F2940FC2C007865E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				31CF05302940FC49007865E0 /* UIViewAddShow.swift */,
+				31CF05322940FC72007865E0 /* UIViewAnimation.swift */,
+				31CF05362940FC92007865E0 /* UIColors+Colors.swift */,
+				31CF05382940FCC9007865E0 /* NotificationName.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		31CF053A2940FCFE007865E0 /* DeviceOrientation */ = {
+			isa = PBXGroup;
+			children = (
+				31CF053B2940FD34007865E0 /* DeviceOrientaionController.swift */,
+			);
+			path = DeviceOrientation;
+			sourceTree = "<group>";
+		};
+		31CF053D2940FD77007865E0 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				31CF053F2940FD9C007865E0 /* TimerController.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		31CF053E2940FD83007865E0 /* CaptureSession */ = {
+			isa = PBXGroup;
+			children = (
+				31CF05412940FDAE007865E0 /* CaptureSessionController.swift */,
+			);
+			path = CaptureSession;
+			sourceTree = "<group>";
+		};
+		31CF05432940FDCC007865E0 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				31CF05472940FE50007865E0 /* CaptureViewController.swift */,
+				31CF05482940FE50007865E0 /* CaptureViewController.xib */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		31CF05442940FDDE007865E0 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				31CF05452940FE10007865E0 /* VideoPlayerViewController.swift */,
+			);
+			path = VideoPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31CF054A2940FE50007865E0 /* CaptureViewController.xib in Resources */,
 				3117EDAB29397AB90069A7E4 /* RequestCameraAuthView.xib in Resources */,
 				31B4B9BE29398045000566F2 /* LaunchViewController.xib in Resources */,
 				02C27AED28B9879E003934F9 /* Assets.xcassets in Resources */,
@@ -216,11 +295,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				31B4B9C3293981EE000566F2 /* RequestCameraAuthController.swift in Sources */,
+				31CF05372940FC92007865E0 /* UIColors+Colors.swift in Sources */,
+				31CF05332940FC72007865E0 /* UIViewAnimation.swift in Sources */,
+				31CF05462940FE10007865E0 /* VideoPlayerViewController.swift in Sources */,
+				31CF05492940FE50007865E0 /* CaptureViewController.swift in Sources */,
+				31CF05422940FDAE007865E0 /* CaptureSessionController.swift in Sources */,
+				31CF05392940FCC9007865E0 /* NotificationName.swift in Sources */,
+				31CF053C2940FD34007865E0 /* DeviceOrientaionController.swift in Sources */,
+				31CF05402940FD9C007865E0 /* TimerController.swift in Sources */,
 				02C27AE828B9879B003934F9 /* ViewController.swift in Sources */,
 				31B4B9BD29398045000566F2 /* LaunchViewController.swift in Sources */,
 				3117EDAA29397AB90069A7E4 /* RequestCameraAuthView.swift in Sources */,
 				02C27AE428B9879B003934F9 /* AppDelegate.swift in Sources */,
 				02C27AE628B9879B003934F9 /* SceneDelegate.swift in Sources */,
+				31CF05312940FC49007865E0 /* UIViewAddShow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

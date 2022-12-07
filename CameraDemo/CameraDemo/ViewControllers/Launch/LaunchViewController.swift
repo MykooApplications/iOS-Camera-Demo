@@ -19,6 +19,10 @@ class LaunchViewController: UIViewController {
 }
 
 private extension LaunchViewController {
+    func setupViewForNextAuthorizationRequest() {
+        
+    }
+    
     func setupViews() {
         let requestCameraAuthView = RequestCameraAuthView()
         requestCameraAuthView.translatesAutoresizingMaskIntoConstraints = false
