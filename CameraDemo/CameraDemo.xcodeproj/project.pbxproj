@@ -34,6 +34,7 @@
 		31CF055729415046007865E0 /* RequestDeviceAuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF055629415046007865E0 /* RequestDeviceAuthController.swift */; };
 		31CF0559294174ED007865E0 /* RequestDeviceAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF0558294174ED007865E0 /* RequestDeviceAuthView.swift */; };
 		31CF055B29417671007865E0 /* RequestDeviceAuthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31CF055A29417671007865E0 /* RequestDeviceAuthView.xib */; };
+		31CF055D294181E3007865E0 /* AppSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF055C294181E3007865E0 /* AppSetup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		31CF055629415046007865E0 /* RequestDeviceAuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDeviceAuthController.swift; sourceTree = "<group>"; };
 		31CF0558294174ED007865E0 /* RequestDeviceAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDeviceAuthView.swift; sourceTree = "<group>"; };
 		31CF055A29417671007865E0 /* RequestDeviceAuthView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestDeviceAuthView.xib; sourceTree = "<group>"; };
+		31CF055C294181E3007865E0 /* AppSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				31B4B9BF293981BB000566F2 /* Controllers */,
 				3117EDA229397A020069A7E4 /* Views */,
 				3117EDA329397A0D0069A7E4 /* ViewControllers */,
+				31CF055C294181E3007865E0 /* AppSetup.swift */,
 				02C27AE328B9879B003934F9 /* AppDelegate.swift */,
 				02C27AE528B9879B003934F9 /* SceneDelegate.swift */,
 				02C27AE928B9879B003934F9 /* Main.storyboard */,
@@ -353,6 +356,7 @@
 				31CF05392940FCC9007865E0 /* NotificationName.swift in Sources */,
 				31CF053C2940FD34007865E0 /* DeviceOrientaionController.swift in Sources */,
 				31CF055729415046007865E0 /* RequestDeviceAuthController.swift in Sources */,
+				31CF055D294181E3007865E0 /* AppSetup.swift in Sources */,
 				31CF05402940FD9C007865E0 /* TimerController.swift in Sources */,
 				02C27AE828B9879B003934F9 /* ViewController.swift in Sources */,
 				31B4B9BD29398045000566F2 /* LaunchViewController.swift in Sources */,

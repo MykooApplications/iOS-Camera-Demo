@@ -11,6 +11,8 @@ protocol RequestCameraAuthViewDelegate: AnyObject {
     func requestCameraAuthTapped()
 }
 
+
+
 class RequestCameraAuthView: UIView {
     
     @IBOutlet weak var contentView: UIView!

@@ -69,12 +69,16 @@ private extension LaunchViewController {
         if let _ = requestCameraAuthView {
             //removeRequestPhotoLibraryAuthView()
         }
+        
+        DispatchQueue.main.async {
+            AppSetup.loadCaptureViewController()
+        }
     }
     
     
     func setupRequestCameraAuthView() {
         guard requestCameraAuthView == nil else {
-            if
+            if cameraAuthStatus
         }
     }
     
