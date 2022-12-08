@@ -27,6 +27,13 @@
 		31CF05462940FE10007865E0 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF05452940FE10007865E0 /* VideoPlayerViewController.swift */; };
 		31CF05492940FE50007865E0 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF05472940FE50007865E0 /* CaptureViewController.swift */; };
 		31CF054A2940FE50007865E0 /* CaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31CF05482940FE50007865E0 /* CaptureViewController.xib */; };
+		31CF054F29414E88007865E0 /* RequestPhotoLibraryAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF054E29414E88007865E0 /* RequestPhotoLibraryAuthView.swift */; };
+		31CF055129414ECB007865E0 /* RequestPhotoLibraryAuthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31CF055029414ECB007865E0 /* RequestPhotoLibraryAuthView.xib */; };
+		31CF055329414F2E007865E0 /* RequestMicrophoneAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF055229414F2E007865E0 /* RequestMicrophoneAuthView.swift */; };
+		31CF055529414F3C007865E0 /* RequestMicrophoneAuthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31CF055429414F3C007865E0 /* RequestMicrophoneAuthView.xib */; };
+		31CF055729415046007865E0 /* RequestDeviceAuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF055629415046007865E0 /* RequestDeviceAuthController.swift */; };
+		31CF0559294174ED007865E0 /* RequestDeviceAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF0558294174ED007865E0 /* RequestDeviceAuthView.swift */; };
+		31CF055B29417671007865E0 /* RequestDeviceAuthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31CF055A29417671007865E0 /* RequestDeviceAuthView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +59,13 @@
 		31CF05452940FE10007865E0 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		31CF05472940FE50007865E0 /* CaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 		31CF05482940FE50007865E0 /* CaptureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaptureViewController.xib; sourceTree = "<group>"; };
+		31CF054E29414E88007865E0 /* RequestPhotoLibraryAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPhotoLibraryAuthView.swift; sourceTree = "<group>"; };
+		31CF055029414ECB007865E0 /* RequestPhotoLibraryAuthView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestPhotoLibraryAuthView.xib; sourceTree = "<group>"; };
+		31CF055229414F2E007865E0 /* RequestMicrophoneAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMicrophoneAuthView.swift; sourceTree = "<group>"; };
+		31CF055429414F3C007865E0 /* RequestMicrophoneAuthView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestMicrophoneAuthView.xib; sourceTree = "<group>"; };
+		31CF055629415046007865E0 /* RequestDeviceAuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDeviceAuthController.swift; sourceTree = "<group>"; };
+		31CF0558294174ED007865E0 /* RequestDeviceAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDeviceAuthView.swift; sourceTree = "<group>"; };
+		31CF055A29417671007865E0 /* RequestDeviceAuthView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestDeviceAuthView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +150,11 @@
 		3117EDA729397A860069A7E4 /* RequestAuth */ = {
 			isa = PBXGroup;
 			children = (
-				3117EDA829397AB90069A7E4 /* RequestCameraAuthView.swift */,
-				3117EDA929397AB90069A7E4 /* RequestCameraAuthView.xib */,
+				31CF054D29414C70007865E0 /* PhotoLibrary */,
+				31CF054C29414C63007865E0 /* Microphone */,
+				31CF054B29414C5A007865E0 /* Camera */,
+				31CF0558294174ED007865E0 /* RequestDeviceAuthView.swift */,
+				31CF055A29417671007865E0 /* RequestDeviceAuthView.xib */,
 			);
 			path = RequestAuth;
 			sourceTree = "<group>";
@@ -157,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				31B4B9C1293981CF000566F2 /* Camera */,
+				31CF055629415046007865E0 /* RequestDeviceAuthController.swift */,
 			);
 			path = RequestAuth;
 			sourceTree = "<group>";
@@ -221,6 +239,33 @@
 			path = VideoPlayer;
 			sourceTree = "<group>";
 		};
+		31CF054B29414C5A007865E0 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				3117EDA829397AB90069A7E4 /* RequestCameraAuthView.swift */,
+				3117EDA929397AB90069A7E4 /* RequestCameraAuthView.xib */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		31CF054C29414C63007865E0 /* Microphone */ = {
+			isa = PBXGroup;
+			children = (
+				31CF055229414F2E007865E0 /* RequestMicrophoneAuthView.swift */,
+				31CF055429414F3C007865E0 /* RequestMicrophoneAuthView.xib */,
+			);
+			path = Microphone;
+			sourceTree = "<group>";
+		};
+		31CF054D29414C70007865E0 /* PhotoLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				31CF054E29414E88007865E0 /* RequestPhotoLibraryAuthView.swift */,
+				31CF055029414ECB007865E0 /* RequestPhotoLibraryAuthView.xib */,
+			);
+			path = PhotoLibrary;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -279,11 +324,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31CF055B29417671007865E0 /* RequestDeviceAuthView.xib in Resources */,
 				31CF054A2940FE50007865E0 /* CaptureViewController.xib in Resources */,
 				3117EDAB29397AB90069A7E4 /* RequestCameraAuthView.xib in Resources */,
 				31B4B9BE29398045000566F2 /* LaunchViewController.xib in Resources */,
 				02C27AED28B9879E003934F9 /* Assets.xcassets in Resources */,
 				02C27AEB28B9879B003934F9 /* Main.storyboard in Resources */,
+				31CF055129414ECB007865E0 /* RequestPhotoLibraryAuthView.xib in Resources */,
+				31CF055529414F3C007865E0 /* RequestMicrophoneAuthView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,13 +343,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				31B4B9C3293981EE000566F2 /* RequestCameraAuthController.swift in Sources */,
+				31CF054F29414E88007865E0 /* RequestPhotoLibraryAuthView.swift in Sources */,
 				31CF05372940FC92007865E0 /* UIColors+Colors.swift in Sources */,
 				31CF05332940FC72007865E0 /* UIViewAnimation.swift in Sources */,
 				31CF05462940FE10007865E0 /* VideoPlayerViewController.swift in Sources */,
 				31CF05492940FE50007865E0 /* CaptureViewController.swift in Sources */,
+				31CF0559294174ED007865E0 /* RequestDeviceAuthView.swift in Sources */,
 				31CF05422940FDAE007865E0 /* CaptureSessionController.swift in Sources */,
 				31CF05392940FCC9007865E0 /* NotificationName.swift in Sources */,
 				31CF053C2940FD34007865E0 /* DeviceOrientaionController.swift in Sources */,
+				31CF055729415046007865E0 /* RequestDeviceAuthController.swift in Sources */,
 				31CF05402940FD9C007865E0 /* TimerController.swift in Sources */,
 				02C27AE828B9879B003934F9 /* ViewController.swift in Sources */,
 				31B4B9BD29398045000566F2 /* LaunchViewController.swift in Sources */,
@@ -309,6 +360,7 @@
 				02C27AE428B9879B003934F9 /* AppDelegate.swift in Sources */,
 				02C27AE628B9879B003934F9 /* SceneDelegate.swift in Sources */,
 				31CF05312940FC49007865E0 /* UIViewAddShow.swift in Sources */,
+				31CF055329414F2E007865E0 /* RequestMicrophoneAuthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
